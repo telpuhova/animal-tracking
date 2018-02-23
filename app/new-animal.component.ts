@@ -45,7 +45,7 @@ export class NewAnimalComponent {
   @Output() newAnimalSender = new EventEmitter();
 
   submitForm(species: string, name: string, age: number, diet: string, location: string, caretakers: number, sex: string, like: string, dislike: string) {
-    var newAnimal: Animal = new Animal(species, name, age, diet, location, caretakers, sex, like, dislike);
+    let newAnimal: Animal = new Animal(species, name, age, diet, location, caretakers, sex, like, dislike);
     this.newAnimalSender.emit(newAnimal);
   }
 }

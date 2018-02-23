@@ -9,40 +9,9 @@ import { Animal } from './animal.model';
 
     <animal-list [childAnimalList]='masterAnimalList' (clickSender)='editAnimal($event)'></animal-list>
 
-    <div *ngIf="selectedAnimal">
-        <h3>{{selectedAnimal.name}}</h3>
+    <hr>
 
-        <h4>Edit Animal</h4>
-        <label>name:</label>
-        <input [(ngModel)]="selectedAnimal.name">
-        <br>
-        <label>species:</label>
-        <input [(ngModel)]="selectedAnimal.species">
-        <br>
-        <label>age:</label>
-        <input [(ngModel)]="selectedAnimal.age">
-        <br>
-        <label>diet:</label>
-        <input [(ngModel)]="selectedAnimal.diet">
-        <br>
-        <label>location:</label>
-        <input [(ngModel)]="selectedAnimal.location">
-        <br>
-        <label>caretakers:</label>
-        <input [(ngModel)]="selectedAnimal.caretakers">
-        <br>
-        <label>sex:</label>
-        <input [(ngModel)]="selectedAnimal.sex">
-        <br>
-        <label>like:</label>
-        <input [(ngModel)]="selectedAnimal.like">
-        <br>
-        <label>dislike:</label>
-        <input [(ngModel)]="selectedAnimal.dislike">
-        <br>
-
-        <button (click)="finishedEditing()">Done</button>
-      </div>
+    <edit-animal [childSelectedAnimal]='selectedAnimal' (doneButtonClickedSender)='finishedEditing()'></edit-animal>
 
   </div>
   `

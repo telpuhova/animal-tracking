@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Animal } from './animal.model';
 
 @Component({
   selector: 'animal-list',
   template: `
     <ul>
-      <li *ngFor="let currentAnimal of animals">
+      <li *ngFor="let currentAnimal of childAnimalList">
         <strong>{{currentAnimal.name}}</strong>
         <br>
         <span class='label'>species:</span> {{currentAnimal.species}}
@@ -31,9 +31,6 @@ import { Animal } from './animal.model';
 })
 
 export class AnimalListComponent {
-  animals: Animal[] = [
-    new Animal('Arctic Fox', "Moon", 2, "Carnivore", "Northern Trail", 5, "Female", "Cool shade", "Loud noises"),
-    new Animal("Ocelot", "Prince", 4, "Carnivore", "Tropical Rain Forest Building", 6, "Male", "Laying in the sunshine", "Toys that are not rope-based"),
-  ];
+  @Input() childAnimalList: Animal[];
 
 }

@@ -7,7 +7,7 @@ import { Animal } from './animal.model';
   <div class="container">
     <h1>Animal tracking</h1>
 
-    <animal-list></animal-list>
+    <animal-list [childAnimalList]='masterAnimalList'></animal-list>
 
   </div>
   `

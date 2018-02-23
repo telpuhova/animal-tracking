@@ -11,8 +11,7 @@ import { Component } from '@angular/core';
   `
 })
 
-//class definition of Component
-  //how a component behaves
+
 export class AppComponent {
 
 }

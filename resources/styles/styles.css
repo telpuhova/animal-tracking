@@ -1,3 +1,50 @@
 .label {
   color: grey;
 }
+
+li {
+  margin-top: 20px;
+}
+
+
+h1 {
+  padding-top: 30px;
+  padding-left: 15px;
+  margin-bottom: 40px;
+}
+
+edit-animal {
+  background-color: lightblue;
+}
+
+.editAnimalLabel {
+  font-weight: 500;
+  /* margin-bottom: 5px; */
+}
+
+body {
+  background-color: #88a893;
+  background-image: url('../images/bgd.jpg');
+}
+
+.container {
+  background-color: #d3d8d0;
+  margin-top: 0px;
+  min-height: 100%;
+}
+
+hr.line {
+  height: 30px;
+  border-style: solid;
+  border-color: #6a8272;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+.custom-well {
+  padding-top: 10px;
+  padding-left: 20px;
+  border: 1px solid #6a8272;
+  background-color: rgba(136, 168, 147, 0.2);
+  height: 60%;
+}

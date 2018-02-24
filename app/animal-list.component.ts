@@ -31,6 +31,7 @@ import { Animal } from './animal.model';
         <span class='label'>dislike:</span> {{currentAnimal.dislike}}
         <br>
         <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit</button>
+        <br>
       </li>
     </ul>
   `
